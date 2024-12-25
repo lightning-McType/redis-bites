@@ -11,7 +11,7 @@ export const validate =
 				success: false,
 				errors: result.error.errors,
 			});
+		} else {
+			next();
 		}
-
-		next();
 	};
